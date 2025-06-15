@@ -982,3 +982,61 @@ section:nth-child(odd) .animate.scroll,
   border-radius: 50%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .navbar {
+    display: none; /* Hide the menu by default on mobile */
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff; /* Or your desired color */
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    left: 0;
+    z-index: 100;
+  }
+  .bx-menu {
+    display: block !important; /* Show hamburger icon */
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .navbar.active {
+    display: flex;
+  }
+  .home-content, .skills-row, .education-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-image, .about-img {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+  .btn-box {
+    flex-direction: column;
+    width: 100%;
+  }
+  form .input-box {
+    flex-direction: column;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .home-image img,
+  .about-img img {
+    width: 100%;
+    height: auto;
+  }
+}
