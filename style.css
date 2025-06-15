@@ -1040,3 +1040,20 @@ section:nth-child(odd) .animate.scroll,
     height: auto;
   }
 }
+@media (max-width: 768px) {
+  .navbar {
+    /* Remove display: none; */
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: -100%; /* Start offscreen */
+    z-index: 100;
+    transition: left 0.3s;
+  }
+  .navbar.active {
+    left: 0; /* Slide in */
+    display: flex; /* Ensure flex */
+  }
+}
