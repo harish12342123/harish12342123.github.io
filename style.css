@@ -960,3 +960,68 @@ section:nth-child(odd) .animate.scroll,
         width: 0;
     }
 }
+/* Ensure containers don't stretch too wide */
+.container, .main-content, section {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Responsive font sizes for headings and body */
+html {
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+h1, .heading {
+    font-size: clamp(2.2rem, 5vw, 5rem);
+}
+h2 { font-size: clamp(1.8rem, 4vw, 3rem); }
+h3 { font-size: clamp(1.4rem, 3vw, 2.2rem); }
+
+body, p, a, span, input, textarea, button {
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+}
+
+/* Make buttons and links more touch-friendly */
+.btn, .btn-box .btn, .home-sci a, .footer-iconTop a {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.7em 1.3em;
+    font-size: 1rem;
+}
+
+/* Reduce padding/margin on mobile for more compact look */
+@media (max-width: 480px) {
+    section, .footer, .header {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+    .btn-box {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        height: auto;
+    }
+    .btn-box .btn {
+        width: 100%;
+    }
+    .about-img {
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+/* Hide large hero images on very small screens for clarity/speed */
+@media (max-width: 400px) {
+    .home-imgHover, .about-img img {
+        display: none;
+    }
+}
+
+/* Make sure overflow doesn't cause horizontal scroll */
+body, html {
+    overflow-x: hidden;
+}
