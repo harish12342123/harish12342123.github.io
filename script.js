@@ -1,49 +1,60 @@
-// toggle icon navbar
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+// Toggle icon and navbar
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
+if (menuIcon && navbar) {
+    menuIcon.onclick = () => {
+        menuIcon.classList.toggle('bx-x');
+        navbar.classList.toggle('active');
+    };
 }
 
-// scroll sections
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+// Scroll sections and active link
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
+window.addEventListener('scroll', () => {
+    let scrollY = window.scrollY;
+
     sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 100;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+        const offset = sec.offsetTop - 100;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
-            // active navbar links
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-            // active sections for animation on scroll
+        if (scrollY >= offset && scrollY < offset + height) {
+            // Remove 'active' from all links, add to current
+            navLinks.forEach(link => link.classList.remove('active'));
+            const currentLink = document.querySelector(`header nav a[href*="${id}"]`);
+            if (currentLink) currentLink.classList.add('active');
+
+            // Animate section
             sec.classList.add('show-animate');
-        }
-        // if want to animation that repeats on scroll use this
-        else {
+        } else {
+            // Remove animation if not in viewport
             sec.classList.remove('show-animate');
         }
     });
 
-    // sticky navbar
-    let header = document.querySelector('header');
+    // Sticky navbar
+    const header = document.querySelector('header');
+    if (header) {
+        header.classList.toggle('sticky', scrollY > 100);
+    }
 
-    header.classList.toggle('sticky', window.scrollY > 100);
+    // Animate footer on scroll
+    const footer = document.querySelector('footer');
+    if (footer) {
+        const scrolledToBottom = window.innerHeight + scrollY >= document.documentElement.scrollHeight;
+        footer.classList.toggle('show-animate', scrolledToBottom);
+    }
+});
 
-    // remove toggle icon and navbar when click navbar links (scroll)
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
-
-    // animation footer on scroll
-    let footer = document.querySelector('footer');
-
-    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
-}
+// Remove toggle icon and navbar when clicking a navbar link (for mobile UX)
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (menuIcon && navbar) {
+            menuIcon.classList.remove('bx-x');
+            navbar.classList.remove('active');
+        }
+    });
+});
