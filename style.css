@@ -1057,3 +1057,162 @@ section:nth-child(odd) .animate.scroll,
     display: flex; /* Ensure flex */
   }
 }
+/* Base styles (desktop first) */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+/* Make sure images scale nicely */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header and navbar responsive */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: #222;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  color: #007bff;
+}
+
+#menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Sections generic styles */
+section {
+  padding: 60px 60px;
+}
+
+/* Home section specific */
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.home-text {
+  flex: 1 1 50%;
+}
+
+.home-image {
+  flex: 1 1 40%;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .header, section {
+    padding: 18px 16px;
+  }
+
+  .home-content {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .home-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 12px 10px;
+  }
+  .navbar {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    z-index: 101;
+  }
+  .navbar.open {
+    display: flex;
+  }
+  #menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    padding: 30px 8px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .home-text h1 {
+    font-size: 1.3rem;
+  }
+
+  .home-text h3 {
+    font-size: 1rem;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .about-img img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Example for making your education/skills/contact sections stack vertically on mobile */
+@media (max-width: 700px) {
+  .education-row,
+  .skills-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+/* Add more mobile tweaks as needed */
