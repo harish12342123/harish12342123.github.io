@@ -1,107 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harish Ojha | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-8501813106530956">
+    <title>Responsive Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <header class="header">
-    <a href="#" class="logo">Harish<span>Ojha</span></a>
-    <div class="bx bx-menu" id="menu-icon"></div>
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <span class="active-nav"></span>
-    </nav>
-  </header>
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Hi, I'm <span>Harish Ojha</span></h1>
+                <h3>Full Stack Developer</h3>
+                <p>I am a dedicated, self-assured, and eager learner with three years of experience in Web Development, Social Media handling, and Digital Marketing.</p>
+                <div class="btn-box">
+                    <a href="#" class="btn">Hire Me</a>
+                    <a href="#" class="btn">Let's Talk</a>
+                </div>
+            </div>
+            <div class="home-image">
+                <img src="back.png" alt="Background" />
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </section>
 
-  <section id="home" class="home-section">
-    <div class="home-content">
-      <h1>Hi, I'm <span>Harish Ojha</span></h1>
-      <p class="subtitle">Full Stack Developer</p>
-      <p class="description">
-        Dedicated, self-assured, and eager learner with three years of experience in Web Development, Social Media Management, and Digital Marketing.
-      </p>
-      <div class="btn-group">
-        <a href="#contact" class="btn">Hire Me</a>
-        <a href="#contact" class="btn btn-outline">Let's Talk</a>
-      </div>
-    </div>
-    <div class="home-image">
-      <img src="back.png" alt="Background" />
-    </div>
-  </section>
+    <!-- about section design -->
+    <section class="about" id="about">
+        <h2>About <span>Me</span></h2>
+        <div class="about-content">
+            <img src="IMG_8890.JPG" alt="Profile picture of Harish Ojha">
+            <h3>Hi there! Glad to see you here.</h3>
+            <p>Hello! Harish Ojha here. A technology fanatic! Currently, I am enrolled in the Faculty of Computer Science and Information Technology at Tribhuvan University, Nepal.</p>
+            <div class="btn-box">
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
 
-  <section id="about" class="about-section">
-    <h2>About Me</h2>
-    <div class="about-content">
-      <img src="IMG_8890.JPG" alt="Harish Ojha" class="profile-pic" />
-      <div>
-        <h3>Glad to see you here!</h3>
-        <p>
-          Hello! I'm Harish Ojha, a tech enthusiast currently pursuing B.Sc. CSIT at 
-          Tribhuvan University, Nepal. I completed my early education at Kailali Model Secondary School.
-        </p>
-        <a href="#contact" class="btn">Contact Me</a>
-      </div>
-    </div>
-  </section>
+    <!-- education section design -->
+    <section class="education" id="education">
+        <h2>My <span>Journey</span></h2>
+        <div class="education-row">
+            <div class="education-column">
+                <h3>Education</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="year">2017 - 2018</div>
+                        <h3>Bachelor Running</h3>
+                        <p>Currently pursuing B.Sc. CSIT at Tribhuvan University, Nepal.</p>
+                    </div>
+                    <div class="education-content">
+                        <div class="year">2018 - 2019</div>
+                        <h3>Completed +2 - Kailali Model Secondary School</h3>
+                        <p>Completed higher secondary education with a focus on science and technology.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="education-column">
+                <h3>Experience</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="year">2020 - 2022</div>
+                        <h3>Web Developer - ABC Company</h3>
+                        <p>Worked on various web development projects.</p>
+                    </div>
+                    <div class="education-content">
+                        <div class="year">2022 - Present</div>
+                        <h3>Freelance Web Developer</h3>
+                        <p>Providing web development services to clients globally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="education" class="education-section">
-    <h2>My Journey</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>2022–Present</h3>
-        <p>Freelance Web Developer — Delivering responsive, intuitive websites globally.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>2020–2022</h3>
-        <p>Web Developer at ABC Company — Full-stack projects tailored for clients.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>2018–2019</h3>
-        <p>Completed +2 at Kailali Model Secondary School (Science & Tech track).</p>
-      </div>
-      <div class="timeline-item">
-        <h3>2017–2018</h3>
-        <p>Pursuing B.Sc. CSIT at Tribhuvan University.</p>
-      </div>
-    </div>
-  </section>
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+        <h2>My <span>Skills</span></h2>
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3>Coding Skills</h3>
+                <div class="skills-box">
+                    <div class="progress">
+                        <h3>HTML <span>90%</span></h3>
+                        <div class="bar"><span style="width: 90%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>CSS <span>80%</span></h3>
+                        <div class="bar"><span style="width: 80%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>JavaScript <span>65%</span></h3>
+                        <div class="bar"><span style="width: 65%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Python <span>75%</span></h3>
+                        <div class="bar"><span style="width: 75%;"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-column">
+                <h3>Professional Skills</h3>
+                <div class="skills-box">
+                    <div class="progress">
+                        <h3>Web Design <span>95%</span></h3>
+                        <div class="bar"><span style="width: 95%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Web Development <span>67%</span></h3>
+                        <div class="bar"><span style="width: 67%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Graphic Design <span>85%</span></h3>
+                        <div class="bar"><span style="width: 85%;"></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>SEO Marketing <span>60%</span></h3>
+                        <div class="bar"><span style="width: 60%;"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="skills" class="skills-section">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div>
-        <h3>Coding</h3>
-        <p>HTML (90%), CSS (80%), JavaScript (65%), Python (75%)</p>
-      </div>
-      <div>
-        <h3>Professional</h3>
-        <p>Web Design (95%), Web Development (67%), Graphic Design (85%), SEO (60%)</p>
-      </div>
-    </div>
-  </section>
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2>Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" placeholder="Mobile Number" required>
+                <input type="text" placeholder="Email Subject" required>
+            </div>
+            <div class="textarea-field">
+                <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
 
-  <section id="contact" class="contact-section">
-    <h2>Contact Me</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email" required />
-      <input type="tel" placeholder="Mobile Number" required />
-      <input type="text" placeholder="Subject" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit" class="btn">Submit</button>
-    </form>
-  </section>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
