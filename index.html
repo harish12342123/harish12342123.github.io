@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-8501813106530956">
-    <title>Responsive Personal Portfolio</title>
+    <title>Harish Ojha | Responsive Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
-
 <body>
-    <!-- header design -->
+    <!-- Header -->
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-        <nav class="navbar">
+        <a href="#" class="logo" aria-label="Homepage">Portfolio</a>
+        <button class="bx bx-menu" id="menu-icon" aria-label="Open navigation menu" aria-controls="navbar" aria-expanded="false"></button>
+        <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#education">Education</a>
@@ -25,44 +23,57 @@
         </nav>
     </header>
 
-    <!-- home section design -->
-    <section class="home" id="home">
+    <main>
+    <!-- Home Section -->
+    <section class="home" id="home" aria-label="Home">
         <div class="home-content">
             <div class="home-text">
                 <h1>Hi, I'm <span>Harish Ojha</span></h1>
-                <h3>Full Stack Developer</h3>
-                <p>I am a dedicated, self-assured, and eager learner with three years of experience in Web Development, Social Media handling, and Digital Marketing.</p>
+                <h2>Full Stack Developer</h2>
+                <p>
+                    A dedicated, confident, and enthusiastic learner with 3 years of experience in Web Development, Social Media Management, and Digital Marketing.
+                </p>
                 <div class="btn-box">
-                    <a href="#" class="btn">Hire Me</a>
-                    <a href="#" class="btn">Let's Talk</a>
+                    <a href="#contact" class="btn">Hire Me</a>
+                    <a href="#contact" class="btn">Let's Talk</a>
                 </div>
             </div>
             <div class="home-image">
-                <img src="back.png" alt="Background" />
+                <img src="back.png" alt="Abstract coding illustration" />
             </div>
         </div>
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <div class="home-sci" aria-label="Social links">
+            <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">
+                <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="bx bxl-linkedin"></i>
+            </a>
         </div>
     </section>
 
-    <!-- about section design -->
-    <section class="about" id="about">
+    <!-- About Section -->
+    <section class="about" id="about" aria-label="About Me">
         <h2>About <span>Me</span></h2>
         <div class="about-content">
-            <img src="IMG_8890.JPG" alt="Profile picture of Harish Ojha">
-            <h3>Hi there! Glad to see you here.</h3>
-            <p>Hello! Harish Ojha here. A technology fanatic! Currently, I am enrolled in the Faculty of Computer Science and Information Technology at Tribhuvan University, Nepal.</p>
-            <div class="btn-box">
-                <a href="#contact" class="btn">Contact Me</a>
+            <img src="IMG_8890.JPG" alt="Harish Ojha portrait">
+            <div>
+                <h3>Hi there! Glad to see you here.</h3>
+                <p>
+                    Hello! I'm Harish Ojha, a technology enthusiast currently pursuing a B.Sc. in CSIT at Tribhuvan University, Nepal.
+                </p>
+                <div class="btn-box">
+                    <a href="#contact" class="btn">Contact Me</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- education section design -->
-    <section class="education" id="education">
+    <!-- Education Section -->
+    <section class="education" id="education" aria-label="Education and Experience">
         <h2>My <span>Journey</span></h2>
         <div class="education-row">
             <div class="education-column">
@@ -70,13 +81,13 @@
                 <div class="education-box">
                     <div class="education-content">
                         <div class="year">2017 - 2018</div>
-                        <h3>Bachelor Running</h3>
-                        <p>Currently pursuing B.Sc. CSIT at Tribhuvan University, Nepal.</p>
+                        <h4>Bachelor (Ongoing)</h4>
+                        <p>B.Sc. CSIT, Tribhuvan University, Nepal</p>
                     </div>
                     <div class="education-content">
                         <div class="year">2018 - 2019</div>
-                        <h3>Completed +2 - Kailali Model Secondary School</h3>
-                        <p>Completed higher secondary education with a focus on science and technology.</p>
+                        <h4>+2 Science - Kailali Model Secondary School</h4>
+                        <p>Focus on Science and Technology.</p>
                     </div>
                 </div>
             </div>
@@ -85,41 +96,41 @@
                 <div class="education-box">
                     <div class="education-content">
                         <div class="year">2020 - 2022</div>
-                        <h3>Web Developer - ABC Company</h3>
+                        <h4>Web Developer - ABC Company</h4>
                         <p>Worked on various web development projects.</p>
                     </div>
                     <div class="education-content">
                         <div class="year">2022 - Present</div>
-                        <h3>Freelance Web Developer</h3>
-                        <p>Providing web development services to clients globally.</p>
+                        <h4>Freelance Web Developer</h4>
+                        <p>Providing web services to global clients.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- skills section design -->
-    <section class="skills" id="skills">
+    <!-- Skills Section -->
+    <section class="skills" id="skills" aria-label="Skills">
         <h2>My <span>Skills</span></h2>
         <div class="skills-row">
             <div class="skills-column">
                 <h3>Coding Skills</h3>
                 <div class="skills-box">
                     <div class="progress">
-                        <h3>HTML <span>90%</span></h3>
-                        <div class="bar"><span style="width: 90%;"></span></div>
+                        <h4>HTML <span>90%</span></h4>
+                        <div class="bar"><span style="width:90%;"></span></div>
                     </div>
                     <div class="progress">
-                        <h3>CSS <span>80%</span></h3>
-                        <div class="bar"><span style="width: 80%;"></span></div>
+                        <h4>CSS <span>80%</span></h4>
+                        <div class="bar"><span style="width:80%;"></span></div>
                     </div>
                     <div class="progress">
-                        <h3>JavaScript <span>65%</span></h3>
-                        <div class="bar"><span style="width: 65%;"></span></div>
+                        <h4>JavaScript <span>65%</span></h4>
+                        <div class="bar"><span style="width:65%;"></span></div>
                     </div>
                     <div class="progress">
-                        <h3>Python <span>75%</span></h3>
-                        <div class="bar"><span style="width: 75%;"></span></div>
+                        <h4>Python <span>75%</span></h4>
+                        <div class="bar"><span style="width:75%;"></span></div>
                     </div>
                 </div>
             </div>
@@ -127,44 +138,45 @@
                 <h3>Professional Skills</h3>
                 <div class="skills-box">
                     <div class="progress">
-                        <h3>Web Design <span>95%</span></h3>
-                        <div class="bar"><span style="width: 95%;"></span></div>
+                        <h4>Web Design <span>95%</span></h4>
+                        <div class="bar"><span style="width:95%;"></span></div>
                     </div>
                     <div class="progress">
-                        <h3>Web Development <span>67%</span></h3>
-                        <div class="bar"><span style="width: 67%;"></span></div>
+                        <h4>Web Development <span>67%</span></h4>
+                        <div class="bar"><span style="width:67%;"></span></div>
                     </div>
                     <div class="progress">
-                        <h3>Graphic Design <span>85%</span></h3>
-                        <div class="bar"><span style="width: 85%;"></span></div>
+                        <h4>Graphic Design <span>85%</span></h4>
+                        <div class="bar"><span style="width:85%;"></span></div>
                     </div>
                     <div class="progress">
-                        <h3>SEO Marketing <span>60%</span></h3>
-                        <div class="bar"><span style="width: 60%;"></span></div>
+                        <h4>SEO Marketing <span>60%</span></h4>
+                        <div class="bar"><span style="width:60%;"></span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- contact section design -->
-    <section class="contact" id="contact">
+    <!-- Contact Section -->
+    <section class="contact" id="contact" aria-label="Contact">
         <h2>Contact <span>Me</span></h2>
-        <form action="#">
+        <form action="#" method="post" autocomplete="on">
             <div class="input-box">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email" required>
+                <input type="text" name="name" placeholder="Full Name" required autocomplete="name">
+                <input type="email" name="email" placeholder="Email Address" required autocomplete="email">
             </div>
             <div class="input-box">
-                <input type="tel" placeholder="Mobile Number" required>
-                <input type="text" placeholder="Email Subject" required>
+                <input type="tel" name="phone" placeholder="Mobile Number" required autocomplete="tel">
+                <input type="text" name="subject" placeholder="Email Subject" required>
             </div>
             <div class="textarea-field">
-                <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             </div>
             <button type="submit" class="btn">Submit</button>
         </form>
     </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
