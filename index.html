@@ -1,188 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-8501813106530956">
-    <title>Harish Ojha | Responsive Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harish Ojha — Web Developer from Dhangadhi, Nepal</title>
+<meta name="description" content="Harish Ojha is a web developer and B.Sc. CSIT student in Nepal. He builds clear, fast websites for small businesses and teams.">
+<meta property="og:title" content="Harish Ojha — Web Developer">
+<meta property="og:description" content="Clear, fast websites for small businesses and teams. Based in Nepal, working worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <a href="#" class="logo" aria-label="Homepage">Portfolio</a>
-        <button class="bx bx-menu" id="menu-icon" aria-label="Open navigation menu" aria-controls="navbar" aria-expanded="false"></button>
-        <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Home Section -->
-        <section class="home" id="home" aria-label="Home">
-            <div class="home-content">
-                <div class="home-text">
-                    <h1>Hi, I'm <span>Harish Ojha</span></h1>
-                    <h2>Full Stack Developer</h2>
-                    <p>
-                        A dedicated, confident, and enthusiastic learner with 3 years of experience in Web Development, Social Media Management, and Digital Marketing.
-                    </p>
-                    <div class="btn-box">
-                        <a href="#contact" class="btn">Hire Me</a>
-                        <a href="#contact" class="btn">Let's Talk</a>
-                    </div>
-                </div>
-                <div class="home-image">
-                    <img src="back.png" alt="Abstract coding illustration" />
-                </div>
-            </div>
-            <div class="home-sci" aria-label="Social links">
-                <a href="https://www.facebook.com/harish.ojha.965" target="_blank" rel="noopener" aria-label="Facebook">
-                    <i class="bx bxl-facebook"></i>
-                </a>
-                <a href="https://x.com/harryozza" target="_blank" rel="noopener" aria-label="Twitter">
-                    <i class="bx bxl-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/harish-ojha-172275272/" target="_blank" rel="noopener" aria-label="LinkedIn">
-                    <i class="bx bxl-linkedin"></i>
-                </a>
-            </div>
-        </section>
+<a class="skip" href="#main">Skip to content</a>
 
-        <!-- About Section -->
-        <section class="about" id="about" aria-label="About Me">
-            <h2>About <span>Me</span></h2>
-            <div class="about-content">
-                <img src="IMG_8890.JPG" alt="Harish Ojha portrait">
-                <div>
-                    <h3>Hi there! Glad to see you here.</h3>
-                    <p>
-                        Hello! I'm Harish Ojha, a technology enthusiast currently pursuing a B.Sc. in CSIT at Tribhuvan University, Nepal.
-                    </p>
-                    <div class="btn-box">
-                        <a href="#contact" class="btn">Contact Me</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<header class="site-header">
+  <a href="#top" class="brand">Harish Ojha</a>
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" class="nav" aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#journey">Journey</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact" class="nav-cta">Get in touch</a>
+  </nav>
+</header>
 
-        <!-- Education Section -->
-        <section class="education" id="education" aria-label="Education and Experience">
-            <h2>My <span>Journey</span></h2>
-            <div class="education-row">
-                <div class="education-column">
-                    <h3>Education</h3>
-                    <div class="education-box">
-                        <div class="education-content">
-                            <div class="year">2017 - 2018</div>
-                            <h4>Bachelor (Ongoing)</h4>
-                            <p>B.Sc. CSIT, Tribhuvan University, Nepal</p>
-                        </div>
-                        <div class="education-content">
-                            <div class="year">2018 - 2019</div>
-                            <h4>+2 Science - Kailali Model Secondary School</h4>
-                            <p>Focus on Science and Technology.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="education-column">
-                    <h3>Experience</h3>
-                    <div class="education-box">
-                        <div class="education-content">
-                            <div class="year">2020 - 2022</div>
-                            <h4>Web Developer - ABC Company</h4>
-                            <p>Worked on various web development projects.</p>
-                        </div>
-                        <div class="education-content">
-                            <div class="year">2022 - Present</div>
-                            <h4>Freelance Web Developer</h4>
-                            <p>Providing web services to global clients.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<main id="main">
 
-        <!-- Skills Section -->
-        <section class="skills" id="skills" aria-label="Skills">
-            <h2>My <span>Skills</span></h2>
-            <div class="skills-row">
-                <div class="skills-column">
-                    <h3>Coding Skills</h3>
-                    <div class="skills-box">
-                        <div class="progress">
-                            <h4>HTML <span>90%</span></h4>
-                            <div class="bar"><span style="width:90%;"></span></div>
-                        </div>
-                        <div class="progress">
-                            <h4>CSS <span>80%</span></h4>
-                            <div class="bar"><span style="width:80%;"></span></div>
-                        </div>
-                        <div class="progress">
-                            <h4>JavaScript <span>65%</span></h4>
-                            <div class="bar"><span style="width:65%;"></span></div>
-                        </div>
-                        <div class="progress">
-                            <h4>Python <span>75%</span></h4>
-                            <div class="bar"><span style="width:75%;"></span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-column">
-                    <h3>Professional Skills</h3>
-                    <div class="skills-box">
-                        <div class="progress">
-                            <h4>Web Design <span>95%</span></h4>
-                            <div class="bar"><span style="width:95%;"></span></div>
-                        </div>
-                        <div class="progress">
-                            <h4>Web Development <span>67%</span></h4>
-                            <div class="bar"><span style="width:67%;"></span></div>
-                        </div>
-                        <div class="progress">
-                            <h4>Graphic Design <span>85%</span></h4>
-                            <div class="bar"><span style="width:85%;"></span></div>
-                        </div>
-                        <div class="progress">
-                            <h4>SEO Marketing <span>60%</span></h4>
-                            <div class="bar"><span style="width:60%;"></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="status"><span class="dot" aria-hidden="true"></span> Open to freelance projects</p>
+      <h1>I build websites that are easy to use and easy to trust.</h1>
+      <p class="lead">I'm Harish, a web developer and CSIT student in Dhangadhi, Nepal. For the past three years I've helped small businesses and individuals get online, with clean design, honest timelines, and code I can explain.</p>
+      <div class="actions">
+        <a class="btn primary" href="#contact">Start a conversation</a>
+        <a class="btn" href="#work">See my work</a>
+      </div>
+    </div>
+    <figure class="portrait">
+      <img src="profile.JPG" alt="Portrait of Harish Ojha" width="480" height="600">
+    </figure>
+  </section>
 
-        <!-- Contact Section -->
-        <section class="contact" id="contact" aria-label="Contact">
-            <h2>Contact <span>Me</span></h2>
-            <form action="#" method="post" autocomplete="on">
-                <div class="input-box">
-                    <input type="text" name="name" placeholder="Full Name" required autocomplete="name">
-                    <input type="email" name="email" placeholder="Email Address" required autocomplete="email">
-                </div>
-                <div class="input-box">
-                    <input type="tel" name="phone" placeholder="Mobile Number" required autocomplete="tel">
-                    <input type="text" name="subject" placeholder="Email Subject" required>
-                </div>
-                <div class="textarea-field">
-                    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn">Submit</button>
-            </form>
-        </section>
-    </main>
+  <section class="section about" id="about">
+    <h2>A bit about me</h2>
+    <div class="about-grid">
+      <img src="IMG_8890.JPG" alt="Harish Ojha smiling outdoors" loading="lazy" width="360" height="450">
+      <div class="prose">
+        <p>I'm studying B.Sc. CSIT at Tribhuvan University, and I learned most of what I know by building real things for real people: a shop's first website, a landing page for a campaign, a redesign for someone who was tired of their old one.</p>
+        <p>Along the way I picked up social media management and basic digital marketing, which turned out to matter more than I expected. A good site is only useful if people can find it and understand it in a few seconds.</p>
+        <p>I like clear communication, small steps, and finishing what I start. If you're not sure what you need yet, that's fine. We can work it out together.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer (Optional) -->
-    <footer>
-        <p>&copy; 2024 Harish Ojha. All rights reserved.</p>
-    </footer>
+  <section class="section" id="work">
+    <h2>Selected work</h2>
+    <p class="section-note">A few projects I'm proud of. Each one started with a simple question: what does this person actually need?</p>
+    <ul class="projects">
+      <!-- EDIT: replace titles, text and links with your real projects -->
+      <li class="project">
+        <h3>Small business website</h3>
+        <p>A fast, mobile-first site for a local business, with contact details, opening hours and a simple enquiry form.</p>
+        <p class="meta">HTML, CSS, JavaScript</p>
+        <a href="#" class="link">View project</a>
+      </li>
+      <li class="project">
+        <h3>Personal portfolio template</h3>
+        <p>A lightweight portfolio built for students and freelancers who want something clean they can edit themselves.</p>
+        <p class="meta">HTML, CSS, JavaScript</p>
+        <a href="https://github.com/harish12342123" class="link" target="_blank" rel="noopener">View on GitHub</a>
+      </li>
+      <li class="project">
+        <h3>Social media and brand support</h3>
+        <p>Content planning and page management that helped a small brand stay consistent and reach more of the right people.</p>
+        <p class="meta">Social media, Digital marketing, Graphic design</p>
+        <a href="#contact" class="link">Ask about this</a>
+      </li>
+    </ul>
+  </section>
 
-    <script src="script.js"></script>
+  <section class="section" id="journey">
+    <h2>My journey</h2>
+    <div class="journey-grid">
+      <div>
+        <h3>Education</h3>
+        <ol class="timeline">
+          <li><span class="when">Ongoing</span><strong>B.Sc. CSIT</strong>Tribhuvan University, Nepal</li>
+          <li><span class="when">+2 Science</span><strong>Kailali Model Secondary School</strong>Science and technology, where my interest in computers started</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Experience</h3>
+        <ol class="timeline">
+          <li><span class="when">2022 – Present</span><strong>Freelance web developer</strong>Building and maintaining sites for clients around the world</li>
+          <li><span class="when">2020 – 2022</span><strong>Web developer, ABC Company</strong>Worked on a range of web projects as part of a small team</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <h2>What I work with</h2>
+    <p class="section-note">Percentages don't say much, so here is where I actually stand.</p>
+    <div class="skills-grid">
+      <div>
+        <h3>Every day</h3>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>Responsive design</li><li>Web design</li><li>Graphic design</li></ul>
+      </div>
+      <div>
+        <h3>Comfortable with</h3>
+        <ul class="tags"><li>JavaScript</li><li>Python</li><li>Git and GitHub</li><li>Social media management</li></ul>
+      </div>
+      <div>
+        <h3>Still learning</h3>
+        <ul class="tags"><li>Full-stack frameworks</li><li>SEO</li><li>Databases</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="contact-intro">
+      <h2>Let's talk</h2>
+      <p>Tell me a little about your project: what it is, who it's for and when you'd like it done. I read every message and reply personally, usually within a day or two.</p>
+      <ul class="social">
+        <li><a href="https://www.linkedin.com/in/harish-ojha-172275272/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://x.com/harryozza" target="_blank" rel="noopener">X (Twitter)</a></li>
+        <li><a href="https://github.com/harish12342123" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.facebook.com/harish.ojha.965" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+    <form id="contactForm" novalidate>
+      <label>Your name <input type="text" name="name" autocomplete="name" required></label>
+      <label>Your email <input type="email" name="email" autocomplete="email" required></label>
+      <label>What can I help with? <textarea name="message" rows="6" required></textarea></label>
+      <button class="btn primary" type="submit">Send message</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year">2026</span> Harish Ojha. Made by hand in Dhangadhi, Nepal.</p>
+  <a href="#top">Back to top</a>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
